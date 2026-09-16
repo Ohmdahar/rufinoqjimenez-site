@@ -103,7 +103,7 @@ def build_page(pid):
 <meta name="copyright" content="© Rufino Q. Jimenez. All rights reserved. {DOMAIN}/rights/">
 <meta name="tdm-reservation" content="1">
 <meta name="robots" content="noai, noimageai">
-<link rel="canonical" href="{canonical}">
+{'' if pid == 'notfound' else f'<link rel="canonical" href="{canonical}">'}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{SITE}">
 <meta property="og:title" content="{html.escape(title, quote=True)}">
