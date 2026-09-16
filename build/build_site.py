@@ -99,6 +99,10 @@ def build_page(pid):
 <meta name="color-scheme" content="light dark">
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc, quote=True)}">
+<meta name="author" content="Rufino Q. Jimenez">
+<meta name="copyright" content="© Rufino Q. Jimenez. All rights reserved. {DOMAIN}/rights/">
+<meta name="tdm-reservation" content="1">
+<meta name="robots" content="noai, noimageai">
 <link rel="canonical" href="{canonical}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{SITE}">
@@ -142,7 +146,37 @@ for pid in PAGES:
 # assets: img/ and media/ live in the repo; schematic.html is copied from build/
 shutil.copy(os.path.join(BUILD, 'schematic.html'), os.path.join(DIST, 'schematic.html'))
 open(os.path.join(DIST, '.nojekyll'), 'w').close()
-open(os.path.join(DIST, 'robots.txt'), 'w').write('User-agent: *\nAllow: /\nSitemap: ' + DOMAIN + '/sitemap.xml\n')
+ROBOTS = """User-agent: *
+Allow: /
+Sitemap: {domain}/sitemap.xml
+
+# No use of this site for the training of machine-learning systems (see {domain}/rights/).
+# Search indexing is unaffected; these are the training and bulk-collection crawlers.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Claude-Web
+User-agent: CCBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: Meta-ExternalAgent
+User-agent: FacebookBot
+User-agent: Amazonbot
+User-agent: cohere-ai
+User-agent: Diffbot
+User-agent: omgili
+User-agent: omgilibot
+User-agent: ImagesiftBot
+User-agent: Timpibot
+User-agent: YouBot
+User-agent: Ai2Bot
+User-agent: PanguBot
+Disallow: /
+""".format(domain=DOMAIN)
+open(os.path.join(DIST, 'robots.txt'), 'w', newline='\n').write(ROBOTS)
+os.makedirs(os.path.join(DIST, '.well-known'), exist_ok=True)
+open(os.path.join(DIST, '.well-known', 'tdmrep.json'), 'w', newline='\n').write('[{"location": "/", "tdm-reservation": 1}]\n')
 urls = ''.join(f'  <url><loc>{DOMAIN}/{(s + "/") if s else ""}</loc></url>\n' for s, _, _ in PAGES.values())
 open(os.path.join(DIST, 'sitemap.xml'), 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + '</urlset>\n')
 # 404: same look, one line
