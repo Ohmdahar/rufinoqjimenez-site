@@ -87,6 +87,7 @@ img{max-width:100%}
   .works{display:grid;gap:clamp(48px,7vw,80px);padding-block:8px 40px}
   .work{margin:0}
   .work img{width:100%;height:auto;display:block;background:var(--sheet)}
+  .work a.full{display:block}
   .work.plate img,.work.plate video{background:var(--plate)}
   .work.narrow img{max-width:min(100%,620px)}
   .work figcaption{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;padding-top:12px;border-top:1px solid var(--rule);margin-top:14px}
@@ -202,13 +203,13 @@ img{max-width:100%}
       <p class="standfirst"><b>Artist, researcher and art consultant.</b> The practice is a series of conceptual works in systems aesthetics; since January 2026 it also runs through a practice-research PhD at Goldsmiths, University of London.</p>
     </div>
     <figure class="work plate hero">
-      <a href="research/"><img src="img/home-poster.jpg" alt="The Ethics of Entropy: a hyperbolic disk of luminous nodes and relations, the research mapped as a node map" width="1920" height="1080"></a>
+      <a href="research/"><img src="img/home-poster.jpg" srcset="img/home-poster-s.jpg 1280w, img/home-poster.jpg 1920w, img/home-poster-full.jpg 3840w" sizes="(max-width: 1120px) 100vw, 1080px" alt="The Ethics of Entropy: a hyperbolic disk of luminous nodes and relations, the research mapped as a node map" width="1920" height="1080"></a>
       <figcaption><span class="wt">The Ethics of Entropy</span><span class="wm">2026 · browser-based interactive work · <a href="research/">phd research</a></span></figcaption>
     </figure>
     <nav class="doors" aria-label="Sections">
-      <a class="door" href="drawings/"><img src="img/d01-dasein.jpg" alt="" width="1793" height="1800"><span>drawings <small>10 works</small></span></a>
-      <a class="door" href="conceptual/"><img src="img/c04-sadness.jpg" alt="" width="1067" height="1600" style="object-position:50% 42%"><span>conceptual <small>4 works</small></span></a>
-      <a class="door" href="research/"><img src="img/c01-map-bulk.jpg" alt="" width="1920" height="1080"><span>phd research <small>the ethics of entropy</small></span></a>
+      <a class="door" href="drawings/"><img src="img/d01-dasein.jpg" srcset="img/d01-dasein-s.jpg 1195w, img/d01-dasein.jpg 2191w, img/d01-dasein-full.jpg 2576w" sizes="(max-width: 720px) 100vw, 340px" alt="" width="2191" height="2200"><span>drawings <small>10 works</small></span></a>
+      <a class="door" href="conceptual/"><img src="img/c04-sadness.jpg" srcset="img/c04-sadness-s.jpg 800w, img/c04-sadness.jpg 1467w, img/c04-sadness-full.jpg 2560w" sizes="(max-width: 720px) 100vw, 340px" alt="" width="1467" height="2200" style="object-position:50% 42%"><span>conceptual <small>4 works</small></span></a>
+      <a class="door" href="research/"><img src="img/c01-map-bulk.jpg" srcset="img/c01-map-bulk-s.jpg 1280w, img/c01-map-bulk.jpg 1920w, img/c01-map-bulk-full.jpg 3840w" sizes="(max-width: 720px) 100vw, 340px" alt="" width="1920" height="1080"><span>phd research <small>the ethics of entropy</small></span></a>
     </nav>
   
   </main>

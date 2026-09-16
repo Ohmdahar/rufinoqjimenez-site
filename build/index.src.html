@@ -66,6 +66,7 @@
   .works{display:grid;gap:clamp(48px,7vw,80px);padding-block:8px 40px}
   .work{margin:0}
   .work img{width:100%;height:auto;display:block;background:var(--sheet)}
+  .work a.full{display:block}
   .work.plate img,.work.plate video{background:var(--plate)}
   .work.narrow img{max-width:min(100%,620px)}
   .work figcaption{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;padding-top:12px;border-top:1px solid var(--rule);margin-top:14px}
@@ -181,13 +182,13 @@
       <p class="standfirst"><b>Artist, researcher and art consultant.</b> The practice is a series of conceptual works in systems aesthetics; since January 2026 it also runs through a practice-research PhD at Goldsmiths, University of London.</p>
     </div>
     <figure class="work plate hero">
-      <a href="#research"><img src="img/home-poster.jpg" alt="The Ethics of Entropy: a hyperbolic disk of luminous nodes and relations, the research mapped as a node map" width="1920" height="1080"></a>
+      <a href="#research"><img src="img/home-poster.jpg" srcset="img/home-poster-s.jpg 1280w, img/home-poster.jpg 1920w, img/home-poster-full.jpg 3840w" sizes="(max-width: 1120px) 100vw, 1080px" alt="The Ethics of Entropy: a hyperbolic disk of luminous nodes and relations, the research mapped as a node map" width="1920" height="1080"></a>
       <figcaption><span class="wt">The Ethics of Entropy</span><span class="wm">2026 · browser-based interactive work · <a href="#research">phd research</a></span></figcaption>
     </figure>
     <nav class="doors" aria-label="Sections">
-      <a class="door" href="#drawings"><img src="img/d01-dasein.jpg" alt="" width="1793" height="1800"><span>drawings <small>10 works</small></span></a>
-      <a class="door" href="#conceptual"><img src="img/c04-sadness.jpg" alt="" width="1067" height="1600" style="object-position:50% 42%"><span>conceptual <small>4 works</small></span></a>
-      <a class="door" href="#research"><img src="img/c01-map-bulk.jpg" alt="" width="1920" height="1080"><span>phd research <small>the ethics of entropy</small></span></a>
+      <a class="door" href="#drawings"><img src="img/d01-dasein.jpg" srcset="img/d01-dasein-s.jpg 1195w, img/d01-dasein.jpg 2191w, img/d01-dasein-full.jpg 2576w" sizes="(max-width: 720px) 100vw, 340px" alt="" width="2191" height="2200"><span>drawings <small>10 works</small></span></a>
+      <a class="door" href="#conceptual"><img src="img/c04-sadness.jpg" srcset="img/c04-sadness-s.jpg 800w, img/c04-sadness.jpg 1467w, img/c04-sadness-full.jpg 2560w" sizes="(max-width: 720px) 100vw, 340px" alt="" width="1467" height="2200" style="object-position:50% 42%"><span>conceptual <small>4 works</small></span></a>
+      <a class="door" href="#research"><img src="img/c01-map-bulk.jpg" srcset="img/c01-map-bulk-s.jpg 1280w, img/c01-map-bulk.jpg 1920w, img/c01-map-bulk-full.jpg 3840w" sizes="(max-width: 720px) 100vw, 340px" alt="" width="1920" height="1080"><span>phd research <small>the ethics of entropy</small></span></a>
     </nav>
   </template>
 
@@ -201,44 +202,44 @@
     </div>
     <div class="works">
       <figure class="work">
-        <img src="img/d01-dasein.jpg" alt="dasein: a dense pastel drawing in blue, orange, green and pink, figures assembling and dissolving" width="1793" height="1800" loading="lazy">
-        <figcaption><span class="wt">dasein</span><span class="wm">48 × 48 in · pastel on birch board</span></figcaption>
+        <a class="full" href="img/d01-dasein-full.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/d01-dasein.jpg" srcset="img/d01-dasein-s.jpg 1195w, img/d01-dasein.jpg 2191w, img/d01-dasein-full.jpg 2576w" sizes="(max-width: 1120px) 100vw, 1080px" alt="dasein: a dense pastel drawing in blue, orange, green and pink, figures assembling and dissolving" width="2191" height="2200" loading="lazy"></a>
+        <figcaption><span class="wt">dasein</span><span class="wm">48 × 48 in · pastel on birch board · <a href="img/d01-dasein-full.jpg" target="_blank" rel="noopener">full size</a></span></figcaption>
       </figure>
       <figure class="work">
-        <img src="img/d02-analytic-synthetic.jpg" alt="the analytic synthetic distinction: pastel drawing in green, red and gold with black contour lines" width="1784" height="1800" loading="lazy">
-        <figcaption><span class="wt">the analytic synthetic distinction</span><span class="wm">2023 · 48 × 48 in · pastel on birch board</span></figcaption>
+        <a class="full" href="img/d02-analytic-synthetic-full.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/d02-analytic-synthetic.jpg" srcset="img/d02-analytic-synthetic-s.jpg 1189w, img/d02-analytic-synthetic.jpg 2180w, img/d02-analytic-synthetic-full.jpg 2603w" sizes="(max-width: 1120px) 100vw, 1080px" alt="the analytic synthetic distinction: pastel drawing in green, red and gold with black contour lines" width="2180" height="2200" loading="lazy"></a>
+        <figcaption><span class="wt">the analytic synthetic distinction</span><span class="wm">2023 · 48 × 48 in · pastel on birch board · <a href="img/d02-analytic-synthetic-full.jpg" target="_blank" rel="noopener">full size</a></span></figcaption>
       </figure>
       <figure class="work">
-        <img src="img/d03-temporal-precedence.jpg" alt="temporal precedence causality: a wide pastel drawing with a burst of yellow light at the left" width="2000" height="978" loading="lazy">
-        <figcaption><span class="wt">temporal precedence causality</span><span class="wm">24 × 48 in · pastel on birch board</span></figcaption>
+        <a class="full" href="img/d03-temporal-precedence-full.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/d03-temporal-precedence.jpg" srcset="img/d03-temporal-precedence-s.jpg 1200w, img/d03-temporal-precedence.jpg 2200w, img/d03-temporal-precedence-full.jpg 3840w" sizes="(max-width: 1120px) 100vw, 1080px" alt="temporal precedence causality: a wide pastel drawing with a burst of yellow light at the left" width="2200" height="1076" loading="lazy"></a>
+        <figcaption><span class="wt">temporal precedence causality</span><span class="wm">24 × 48 in · pastel on birch board · <a href="img/d03-temporal-precedence-full.jpg" target="_blank" rel="noopener">full size</a></span></figcaption>
       </figure>
       <figure class="work">
-        <img src="img/d04-covariation-principle.jpg" alt="Covariation principle: charcoal and coloured chalk drawn directly on a wall, black lines over pastel colour" width="2000" height="1057" loading="lazy">
-        <figcaption><span class="wt roman">Covariation principle</span><span class="wm">9 × 17 ft · charcoal and coloured chalk on wall</span></figcaption>
+        <a class="full" href="img/d04-covariation-principle-full.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/d04-covariation-principle.jpg" srcset="img/d04-covariation-principle-s.jpg 1200w, img/d04-covariation-principle.jpg 2200w, img/d04-covariation-principle-full.jpg 3600w" sizes="(max-width: 1120px) 100vw, 1080px" alt="Covariation principle: charcoal and coloured chalk drawn directly on a wall, black lines over pastel colour" width="2200" height="1162" loading="lazy"></a>
+        <figcaption><span class="wt roman">Covariation principle</span><span class="wm">9 × 17 ft · charcoal and coloured chalk on wall · <a href="img/d04-covariation-principle-full.jpg" target="_blank" rel="noopener">full size</a></span></figcaption>
       </figure>
       <figure class="work">
-        <img src="img/d05-ocean-room.jpg" alt="i let my ocean flow into you: a panorama of a room drawn in charcoal on every wall, a visitor standing inside it" width="2800" height="614" loading="lazy">
-        <figcaption><span class="wt">i let my ocean flow into you….</span><span class="wm">2015 · 462 sq ft room · charcoal, white paint and masking tape on painted sheetrock and birch panel</span></figcaption>
+        <a class="full" href="img/d05-ocean-room-full.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/d05-ocean-room.jpg" srcset="img/d05-ocean-room-s.jpg 1200w, img/d05-ocean-room.jpg 2200w, img/d05-ocean-room-full.jpg 3840w" sizes="(max-width: 1120px) 100vw, 1080px" alt="i let my ocean flow into you: a panorama of a room drawn in charcoal on every wall, a visitor standing inside it" width="2200" height="483" loading="lazy"></a>
+        <figcaption><span class="wt">i let my ocean flow into you….</span><span class="wm">2015 · 462 sq ft room · charcoal, white paint and masking tape on painted sheetrock and birch panel · <a href="img/d05-ocean-room-full.jpg" target="_blank" rel="noopener">full size</a></span></figcaption>
       </figure>
       <figure class="work">
-        <img src="img/d06-ocean-detail.jpg" alt="i let my ocean flow into you, detail: charcoal lines and straight ruled lines across a wall" width="1800" height="1069" loading="lazy">
-        <figcaption><span class="wt">i let my ocean flow into you…. (detail)</span><span class="wm">2015 · 462 sq ft room</span></figcaption>
+        <a class="full" href="img/d06-ocean-detail-full.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/d06-ocean-detail.jpg" srcset="img/d06-ocean-detail-s.jpg 1200w, img/d06-ocean-detail.jpg 2200w, img/d06-ocean-detail-full.jpg 3599w" sizes="(max-width: 1120px) 100vw, 1080px" alt="i let my ocean flow into you, detail: charcoal lines and straight ruled lines across a wall" width="2200" height="1306" loading="lazy"></a>
+        <figcaption><span class="wt">i let my ocean flow into you…. (detail)</span><span class="wm">2015 · 462 sq ft room · <a href="img/d06-ocean-detail-full.jpg" target="_blank" rel="noopener">full size</a></span></figcaption>
       </figure>
       <figure class="work narrow">
-        <img src="img/d07-diegetic-monolith.jpg" alt="the diegetic monolith: a dark drawing with two white bursts of light in the upper half" width="1115" height="1513" loading="lazy">
-        <figcaption><span class="wt">the diegetic monolith</span><span class="wm">24 × 18 in · pastel, walnut ink, charcoal and pencil on board</span></figcaption>
+        <a class="full" href="img/d07-diegetic-monolith.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/d07-diegetic-monolith.jpg" srcset="img/d07-diegetic-monolith-s.jpg 884w, img/d07-diegetic-monolith.jpg 1115w" sizes="(max-width: 720px) 100vw, 620px" alt="the diegetic monolith: a dark drawing with two white bursts of light in the upper half" width="1115" height="1513" loading="lazy"></a>
+        <figcaption><span class="wt">the diegetic monolith</span><span class="wm">24 × 18 in · pastel, walnut ink, charcoal and pencil on board · <a href="img/d07-diegetic-monolith.jpg" target="_blank" rel="noopener">full size</a></span></figcaption>
       </figure>
       <figure class="work narrow">
-        <img src="img/d08-theotokos-enantiodromia.jpg" alt="theotokos enantiodromia: a pastel drawing of folded, embracing forms in blue, yellow and red" width="1621" height="1800" loading="lazy">
-        <figcaption><span class="wt">theotokos enantiodromia</span><span class="wm">52 × 60 in · pastel on watercolour paper</span></figcaption>
+        <a class="full" href="img/d08-theotokos-enantiodromia-full.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/d08-theotokos-enantiodromia.jpg" srcset="img/d08-theotokos-enantiodromia-s.jpg 1081w, img/d08-theotokos-enantiodromia.jpg 1981w, img/d08-theotokos-enantiodromia-full.jpg 2500w" sizes="(max-width: 720px) 100vw, 620px" alt="theotokos enantiodromia: a pastel drawing of folded, embracing forms in blue, yellow and red" width="1981" height="2200" loading="lazy"></a>
+        <figcaption><span class="wt">theotokos enantiodromia</span><span class="wm">52 × 60 in · pastel on watercolour paper · <a href="img/d08-theotokos-enantiodromia-full.jpg" target="_blank" rel="noopener">full size</a></span></figcaption>
       </figure>
       <figure class="work">
-        <img src="img/d09-untitled.jpg" alt="Untitled: a wall-sized pastel drawing of crowded figures and faces in saturated colour" width="1800" height="1230" loading="lazy">
-        <figcaption><span class="wt roman">Untitled</span><span class="wm">152 × 192 in · artist-fabricated pure pigment pastels on photo backdrop paper</span></figcaption>
+        <a class="full" href="img/d09-untitled-full.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/d09-untitled.jpg" srcset="img/d09-untitled-s.jpg 1200w, img/d09-untitled.jpg 2200w, img/d09-untitled-full.jpg 2500w" sizes="(max-width: 1120px) 100vw, 1080px" alt="Untitled: a wall-sized pastel drawing of crowded figures and faces in saturated colour" width="2200" height="1504" loading="lazy"></a>
+        <figcaption><span class="wt roman">Untitled</span><span class="wm">152 × 192 in · artist-fabricated pure pigment pastels on photo backdrop paper · <a href="img/d09-untitled-full.jpg" target="_blank" rel="noopener">full size</a></span></figcaption>
       </figure>
       <figure class="work">
-        <img src="img/d10-petite-mort.jpg" alt="la petite mort de la tène: a wide charcoal drawing of swelling, overlapping forms" width="2000" height="775" loading="lazy">
-        <figcaption><span class="wt">la petite mort de la tène</span><span class="wm">48 × 96 in · charcoal on paper</span></figcaption>
+        <a class="full" href="img/d10-petite-mort-full.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/d10-petite-mort.jpg" srcset="img/d10-petite-mort-s.jpg 1200w, img/d10-petite-mort.jpg 2200w, img/d10-petite-mort-full.jpg 3800w" sizes="(max-width: 1120px) 100vw, 1080px" alt="la petite mort de la tène: a wide charcoal drawing of swelling, overlapping forms" width="2200" height="852" loading="lazy"></a>
+        <figcaption><span class="wt">la petite mort de la tène</span><span class="wm">48 × 96 in · charcoal on paper · <a href="img/d10-petite-mort-full.jpg" target="_blank" rel="noopener">full size</a></span></figcaption>
       </figure>
     </div>
     <details class="note">
@@ -264,9 +265,9 @@
     </div>
     <div class="works">
       <figure class="work plate">
-        <img src="img/c01-map-bulk.jpg" alt="The Ethics of Entropy in energy overlay: the hyperbolic disk seen from the side as a three-dimensional bulk, coloured flows arcing above it, the map's panels at each side" width="1920" height="1080">
+        <a class="full" href="img/c01-map-bulk-full.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/c01-map-bulk.jpg" srcset="img/c01-map-bulk-s.jpg 1280w, img/c01-map-bulk.jpg 1920w, img/c01-map-bulk-full.jpg 3840w" sizes="(max-width: 1120px) 100vw, 1080px" alt="The Ethics of Entropy in energy overlay: the hyperbolic disk seen from the side as a three-dimensional bulk, coloured flows arcing above it, the map's panels at each side" width="1920" height="1080"></a>
         <figcaption>
-          <span class="wt">The Ethics of Entropy</span><span class="wm">2026 · browser-based interactive work · energy overlay, three-dimensional bulk</span>
+          <span class="wt">The Ethics of Entropy</span><span class="wm">2026 · browser-based interactive work · energy overlay, three-dimensional bulk · <a href="img/c01-map-bulk-full.jpg" target="_blank" rel="noopener">full size</a></span>
           <span class="wn">The research vault mapped onto a hyperbolic disk and run as a thermodynamics: a conceptual work that is also the research. The full account and a filmed tour are on the <a href="#research">PhD Research</a> page.</span>
         </figcaption>
       </figure>
@@ -278,16 +279,16 @@
         </figcaption>
       </figure>
       <figure class="work">
-        <img src="img/c03-all-art.jpg" alt="A drawing of all art that has ever been or will be: a chalkboard covered in white diagrams and equations, from a square and a triangle to a nested sphere, a spiral and an integral" width="1800" height="1263" loading="lazy">
+        <a class="full" href="img/c03-all-art-full.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/c03-all-art.jpg" srcset="img/c03-all-art-s.jpg 1200w, img/c03-all-art.jpg 2200w, img/c03-all-art-full.jpg 3620w" sizes="(max-width: 1120px) 100vw, 1080px" alt="A drawing of all art that has ever been or will be: a chalkboard covered in white diagrams and equations, from a square and a triangle to a nested sphere, a spiral and an integral" width="2200" height="1544" loading="lazy"></a>
         <figcaption>
-          <span class="wt roman">A drawing of all art that has ever been or will be.</span><span class="wm">48 × 96 in · pastel on chalkboard</span>
+          <span class="wt roman">A drawing of all art that has ever been or will be.</span><span class="wm">48 × 96 in · pastel on chalkboard · <a href="img/c03-all-art-full.jpg" target="_blank" rel="noopener">full size</a></span>
           <span class="wn">Facsimile of the drawing performed, walked through aloud and erased at the MFA defence, 2016.</span>
         </figcaption>
       </figure>
       <figure class="work narrow">
-        <img src="img/c04-sadness.jpg" alt="where does the sadness lie, gregg bordowitz: a small white crystal hanging by a filament from a curved copper wire, over a charcoal block" width="1067" height="1600" loading="lazy">
+        <a class="full" href="img/c04-sadness-full.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/c04-sadness.jpg" srcset="img/c04-sadness-s.jpg 800w, img/c04-sadness.jpg 1467w, img/c04-sadness-full.jpg 2560w" sizes="(max-width: 720px) 100vw, 620px" alt="where does the sadness lie, gregg bordowitz: a small white crystal hanging by a filament from a curved copper wire, over a charcoal block" width="1467" height="2200" loading="lazy"></a>
         <figcaption>
-          <span class="wt">where does the sadness lie, gregg bordowitz</span><span class="wm">2016 · 6 × 4 × 4 in · salt, copper, filament, charcoal block</span>
+          <span class="wt">where does the sadness lie, gregg bordowitz</span><span class="wm">2016 · 6 × 4 × 4 in · salt, copper, filament, charcoal block · <a href="img/c04-sadness-full.jpg" target="_blank" rel="noopener">full size</a></span>
           <span class="wn">Crystal grown from the artist's tears.</span>
         </figcaption>
       </figure>
@@ -310,11 +311,17 @@
     </div>
 
     <figure class="work plate video">
-      <video autoplay muted loop playsinline controls preload="auto" poster="img/r-poster.jpg" width="1280" height="720">
+      <video id="tour-film" autoplay muted loop playsinline controls preload="auto" poster="img/r-poster.jpg" width="1920" height="1080">
         <source src="media/ect-map-tour.mp4" type="video/mp4">
       </video>
+      <script>
+        /* screens wider than a phone get the 1080p file; phones keep the 720p one */
+        (function(){ var v=document.getElementById('tour-film'); if(!v) return;
+          var s=v.querySelector('source'); if(!s) return;
+          if(window.matchMedia('(min-width: 900px)').matches){ v.src=s.getAttribute('src').replace('ect-map-tour.mp4','ect-map-tour-1080.mp4'); } })();
+      </script>
       <figcaption>
-        <span class="wt">The Ethics of Entropy</span><span class="wm">2026 · browser-based interactive work · filmed tour, two minutes</span>
+        <span class="wt">The Ethics of Entropy</span><span class="wm">2026 · browser-based interactive work · filmed tour, two minutes · <a href="media/ect-map-tour-1080.mp4" target="_blank" rel="noopener">full size</a></span>
         <span class="wn">The research vault as a hyperbolic node map. The map itself is not published online; it is shown in person.</span>
       </figcaption>
     </figure>
@@ -363,9 +370,9 @@
 
     <div class="works" style="padding-top:44px">
       <figure class="work plate">
-        <img src="img/c01-map-bulk.jpg" alt="The Ethics of Entropy in energy overlay, seen as a three-dimensional bulk: coloured flows arc above the disk, the map's panels at each side" width="1920" height="1080" loading="lazy">
+        <a class="full" href="img/c01-map-bulk-full.jpg" target="_blank" rel="noopener" title="Open at full size"><img src="img/c01-map-bulk.jpg" srcset="img/c01-map-bulk-s.jpg 1280w, img/c01-map-bulk.jpg 1920w, img/c01-map-bulk-full.jpg 3840w" sizes="(max-width: 1120px) 100vw, 1080px" alt="The Ethics of Entropy in energy overlay, seen as a three-dimensional bulk: coloured flows arc above the disk, the map's panels at each side" width="1920" height="1080" loading="lazy"></a>
         <figcaption>
-          <span class="wt">The Ethics of Entropy</span><span class="wm">2026 · energy overlay, three-dimensional bulk</span>
+          <span class="wt">The Ethics of Entropy</span><span class="wm">2026 · energy overlay, three-dimensional bulk · <a href="img/c01-map-bulk-full.jpg" target="_blank" rel="noopener">full size</a></span>
           <span class="wn">The same structure read as a flow. Also shown as a work in <a href="#conceptual">Conceptual</a>.</span>
         </figcaption>
       </figure>

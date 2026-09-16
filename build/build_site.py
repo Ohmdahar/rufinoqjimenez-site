@@ -69,6 +69,7 @@ def rewrite(h, depth, current):
     h = re.sub(r'href="#([a-z]+)"', sub_link, h)
     # asset paths
     h = re.sub(r'(src|poster|href)="(img|media)/', lambda m: f'{m.group(1)}="{rel(depth)}{m.group(2)}/', h)
+    h = re.sub(r'srcset="([^"]*)"', lambda m: 'srcset="' + m.group(1).replace('img/', rel(depth) + 'img/') + '"', h)
     h = h.replace('href="schematic.html"', f'href="{rel(depth)}schematic.html"')
     return h
 
