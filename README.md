@@ -4,7 +4,8 @@ Static site, served by GitHub Pages from the main branch.
 
 - `build/index.src.html` is the single source: the styles, the header, one `<template id="t-...">` per page.
 - `python build/build_site.py` regenerates every `index.html`, `404.html`, `robots.txt` and `sitemap.xml` in place.
-- `img/` holds the work photographs (about 1800 px on the long edge); `media/ect-map-tour.mp4` is the filmed tour (720p); `schematic.html` is the animated Artist Statement, unchanged from the original file.
+- `img/` holds the work photographs at three sizes: `name-s.jpg` (1200 px), `name.jpg` (2200 px) and `name-full.jpg` (the largest, up to 3840 px); the pages choose by screen and link to the full file. The map stills are 1280 / 1920 / 3840. `media/ect-map-tour.mp4` is the filmed tour (720p, phones) and `media/ect-map-tour-1080.mp4` the same cut at 1080p (wider screens); `schematic.html` is the animated Artist Statement, unchanged from the original file.
+- `python build/strip_c2pa.py .` removes the content-credential blocks that a file transfer through Claude adds to JPEGs and to `build/schematic.svg.part`; run it after such files arrive, then build.
 - `CNAME` carries the custom domain once DNS points here.
 
 To change a caption or a paragraph: edit `build/index.src.html`, run the build, commit, push. Pages redeploys in about a minute.
