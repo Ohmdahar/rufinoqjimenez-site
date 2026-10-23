@@ -52,6 +52,9 @@ FAVICON = "data:image/svg+xml," + (
     "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='12.5' fill='none' stroke='%231a1a1a' stroke-width='1.6'/><circle cx='16' cy='16' r='2.6' fill='%239c2b1e'/></svg>"
 ).replace('<', '%3C').replace('>', '%3E')
 
+# Metricool web analytics: counts visits without cookies (added 24 Oct 2026, with Rufino's yes)
+TRACKER = '<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"9fe68593037b575f9703ddb98f828e1d"})});</script>'
+
 def rel(depth):
     return '' if depth == 0 else '../' * depth
 
@@ -120,6 +123,7 @@ img{{max-width:100%}}
 [hidden]{{display:none!important}}
 {style}
 </style>
+{TRACKER}
 </head>
 <body>
 <div class="site">
